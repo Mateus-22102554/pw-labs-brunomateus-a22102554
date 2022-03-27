@@ -1,0 +1,64 @@
+
+body {background-color: rgb(176, 196, 199); font-Family: Marker Felt;}.important {color: rgb(100, 1, 1)}
+
+h2, h3, div {font-Family: Bradley Hand;}
+h1 {font-family: 'Fredoka', sans-serif;}
+#first::first-letter {
+    color: black;
+    font-size: xx-large;
+}
+
+
+#poema2::first-line {
+    background-color: #DCDCDC;
+    color: black;
+}
+
+[target = "foto"] { 
+    background: gray;
+    border-spacing: 3cm;
+    border-color: #2F4F4F;
+    border-style: outset;
+}
+
+[target = "img"]{ 
+    background: gray;
+    border-spacing: 3cm;
+    border-color: #2F4F4F;
+    border-style: outset;
+    box-shadow: 20px 20px gray;
+}
+
+h3 + p::first-letter{font-size: xx-large;}
+
+
+div:hover { background-color: #2F4F4F;}
+#section1:hover { background-color: #DCDCDC;}
+#section2:hover { background-color: #DCDCDC;}
+#html5 { background-color: #2F4F4F; color: #8FBC8F;}
+#css { background-color: #2F4F4F; color: #8FBC8F;}
+
+[target = "blank_"]{ color: gray;}
+div p { font-Family: Marker Felt;}
+div > p { color: #8FBC8F;}
+div + p { color: #8FBC8F;}
+
+a:hover{background-color:white;}
+a::before{content:black;}
+a::after{content: white;}
+
+#set1:hover { background-color: #99a7a7;}
+#set2:hover { background-color: #dcdcdcad;}
+#set3:hover { background-color: #dcdcdcad;}
+
+a:link {color:gray}
+a:visited {color:#3b523b};
+
+input{display: block;}
+
+tr ~ :hover{
+    background-color: rgb(176, 196, 199);
+}
+
+
+

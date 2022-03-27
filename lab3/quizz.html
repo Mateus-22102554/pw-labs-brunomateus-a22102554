@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Bruno Mateus">
+    <meta name="keywords" content="Egipto">
+    <meta name="description" content="Website sobre Egipto">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../lab2/images/egiptoTitulo.ico"/>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@700&display=swap');
+    </style>
+
+    <title>Cairo</title>
+
+    <h1>Cairo</h1>
+    
+    <figure>
+        <img src="../lab2/images/bodyEgipto.jpg">
+    </figure>
+    
+</head>
+
+<body>
+    
+
+    <nav><a href="../lab2/index.html" target="blank_"><b>📃 Introdução</b></a> 
+        <a href="../lab2/local.html" target="blank_"><b>🗺 Localização</b></a>
+        <a href="../lab2/multimedia.html" target="blank_"><b>📷 Multimédia</b></a>
+        <a href="../lab2/info.html" target="blank_"><b>💡 Informações</b></a> 
+        <a href="quizz.html" target="blank_"><b>📝 Quizz</b></a> 
+        <a href="html5-css.html" target="blank_"><b>👨🏻‍💻 Html5-CSS</b></a> 
+        <a href="../index.html" target="blank_"><b>🏠 Home</b></a>
+    </nav>
+
+<h3>Quizz</h3>
+
+<p class="important">Nesta pagina será feito um quizz de forma a verificar o 
+    conhecimento do utilizador sobre a cidade apresentada</p>
+
+<form method="POST" action="mailto: a22102554@alunos.ulht.pt" enctype="multipart/form-data">
+    <fieldset id="set1">
+        <legend>Quizz sobre a cidade Cairo</legend>
+
+        <fieldset id="set2">
+            <legend>Info</legend>
+            <p id="first">Nome: <input type="text" name="nome" autocomplete="on" size="15" autofocus required></p>
+            <p id="first">Apelido: <input type="text" name="apelido" size="15" autocomplete="on" required ></p>
+            <p id="first">Email: <input type="text" name="email" autocomplete="on" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="exemplo@gmail.com" required></p>
+        </fieldset>
+
+        <fieldset id="set3">
+            <legend>Perguntas</legend>
+            <p>Insira a data que realizou este quizz: <input type="date" name="dataQuizz"></p>
+
+            <p>A que país pertence esta cidade? <input type="text" name="pais" maxlength="20"></p>
+           
+            <p>Qual é a area da cidade? 
+                <input type="radio" name="areaCerta" value="3 085 km²" id="areaCerta"> 
+                <label for="areaCerta">3 085 km²</label>
+                
+                <input type="radio" name="areaErrada1" value="5 085 km²" id="areaErrada1">
+                <label for="areaErrada1">5 085 km²</label>
+
+                <input type="radio" name="areaErrada2" value="1 061 km²" id="areaErrada2">
+                <label for="areaErrada2">1 061 km²</label>
+            </p>
+
+            <p>Que monumentos existem nesta cidade?
+                <input type="checkbox" name="monumentoCerto" value="Museu Egípcio" id="monumentoCerto">
+                <label for="monumentoCerto">Museu Egípcio</label>
+
+                <input type="checkbox" name="monumentoErrado" value="Museu do Louvre" id="monumentoErrado">
+                <label for="monumentoErrado">Museu do Louvre</label>
+
+                <input type="checkbox" name="monumentoCerto" value="Gizé" id="monumentoErrado2">
+                <label for="monumentoErrado2">Gizé</label>
+            </p>
+
+            <p>Selecione as cores da bandeira do país a que esta cidade corresponde: 
+                <input type="color" name="vermelho" id="vermelho">
+                <input type="color" name="branco" id="branco">
+                <input type="color" name="preto" id="preto">
+
+            </p>
+
+            <p>Quantos metros de altura tem a Torre do Cairo?
+                <input type="number" name="187" min="50" max="200" id="187">
+            </p>
+
+            <p>Qual o comprimento do Rio Nilo?
+            <input type="range" name="7088" min="6000" max="8000" id="7088"
+            oninput="taxaN.value = parseInt(taxa.value)">
+            <output name="taxaN" for="taxa">0</output> %
+            </p>
+
+            <p>Onde fica situada a Torre do Cairo?
+                <select name="torre" id="torre">
+                    <option value="Ericeira">Ericeira</option>
+                    <option value="Gezira">Ilha de Gezira</option>
+                    <option value="Londres">Londres</option>
+                    <option value="Pico">Ilha do Pico</option>
+                </select>
+
+            </p>
+
+            <p>Qual é a capital do Egipto? 
+                <input list="Capital" >  
+                    <datalist id="Capital">
+                        <option value="Lisboa">Lisboa</option>
+                        <option value="Cairo">Cairo</option>
+                        <option value="Paris">Paris</option>
+                    </datalist>
+            </p>
+            
+            
+            <p>Insira a sua opinião sobre este quizz na caixa abaixo:</p>
+            
+
+            <textarea name="" id="" cols="30" rows="10">         
+            </textarea>
+            <hr>    
+            
+            <input type="image" type="submit" name="Submissao" id="Submissao"  multiple> 
+            <input type="reset" name="clear" id="clear" value="Apagar" multiple>
+            
+        </fieldset>
+
+
+    </fieldset>
+    
+</form>
+
+
+
+</body>
+</html>
