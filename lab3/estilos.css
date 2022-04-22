@@ -1,5 +1,5 @@
 
-body {background-color: rgb(176, 196, 199); font-Family: Marker Felt;}.important {color: rgb(100, 1, 1)}
+body {font-Family: Marker Felt;}.important {color: rgb(100, 1, 1)}
 
 h2, h3, div {font-Family: Bradley Hand;}
 h1 {font-family: 'Fredoka', sans-serif;}
@@ -8,6 +8,98 @@ h1 {font-family: 'Fredoka', sans-serif;}
     font-size: xx-large;
 }
 
+.programacao{
+    color: rgb(223, 220, 213);
+}
+
+body{
+    background-image: url("../img/index.jpg");
+    background-attachment:fixed;
+    background-size: 140%;
+}
+
+
+
+
+.labs{
+    height: 90vh;
+    position: relative;
+}
+
+.inicio{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: rgb(223, 220, 213);
+   
+
+}
+
+.botaoLabs{
+    position: absolute;
+    background-color: transparent;
+    color: rgb(223, 220, 213);
+    border: 5px solid rgb(223, 220, 213);
+    font-family: 'Anton', sans-serif;
+ 
+    font-size: 20px; 
+    mask-size: contain;
+    height: 10vw;
+    width: 20vw;
+    cursor: pointer;
+    top: 250px;
+    left: 160px;
+    padding: 10px;
+    
+    font-family: 'Fredoka', sans-serif;
+   
+    
+}
+
+.botaoLabs:hover{
+    background-color: rgb(223, 220, 213);
+    color: rgb(58, 51, 38);
+ 
+}
+
+.botaoInicio{
+    position: absolute;
+    background-color: rgb(223, 220, 213);
+    color: rgb(58, 51, 38);
+    border: 5px solid rgb(223, 220, 213);
+    font-family: 'Anton', sans-serif;
+    padding: 10px;
+    
+  
+    font-size: 20px; 
+    mask-size: contain;
+    height: 10vw;
+    width: 20vw;
+    cursor: pointer;
+    top: 250px;
+    left: 5px;
+    
+    font-family: 'Fredoka', sans-serif;
+    
+}
+
+.botaoInicio:hover{
+    background-color: transparent;
+    color: rgb(223, 220, 213);
+ 
+}
+
+
+
+
+footer{
+    color: rgb(223, 220, 213);
+}
+
+.links{
+    color: rgb(223, 220, 213);
+
+}
 
 #poema2::first-line {
     background-color: #DCDCDC;

@@ -1,0 +1,597 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Fredoka:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Fredoka:wght@700&family=Lobster&display=swap');
+
+* {box-sizing: border-box;}
+h1 {
+    font-family: 'Fredoka', sans-serif;
+    text-align: center;
+    text-shadow: 5px 5px 5px 5px gray;
+    color:rgb(49, 93, 104);
+    margin-top: 100px;
+}
+
+body{
+    background-image: url("imgLab5/fundo.jpeg") ;
+    background-attachment: fixed;
+    background-size: 140%;
+
+}
+
+@keyframes roda {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+  }
+
+.titulo p:hover{
+    animation-name: roda;  
+    animation-duration: 4s;
+    /* para a animação nunca parar */
+    animation-iteration-count: infinite;
+    /* por defeito acelera no inicio e desacelera no fim. aqui fica uniforme */ 
+    animation-timing-function:cubic-bezier(0.19, 1, 0.22, 1); 
+}
+
+.titulo{
+    display: flex;
+    
+    background-size: cover;
+    height: 290px; 
+    color: rgb(253, 253, 253);
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    text-shadow: 5px 5px 5px gray;
+    font-family: 'Lobster', cursive;
+    height: 90vh;
+ 
+}
+
+
+.container_capitais{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: rgba(98, 173, 173, 0.233);
+    margin: 10px 10px 10px 10px;
+    border-radius: 20px;
+    align-items: space-around;
+    justify-content: space-around;
+    font-family: 'Anton', sans-serif;
+    color:rgb(164, 210, 221);
+    
+}
+
+.container_capitais > div{
+    display: flex;
+    background-color: white;
+    border: 2px solid rgba(42, 66, 66, 0.493);
+    border-radius: 20px;
+    margin: 10px 10px 10px 10px;
+    width: 250px; 
+    box-shadow: 5px 5px 5px 5px gray;  
+}
+
+.container_capitais img{
+    display: flex;
+    border-radius: 20px;
+    justify-content:center;
+    align-items: center;
+    margin: 7px; 
+
+}
+
+.container_capitais div:last-child{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-right: 10px;
+    padding: 10px;
+    
+}
+
+@keyframes opacity {
+
+    0% {opacity: 2.0;}
+    15% {opacity: 0.8;}
+    25% {opacity: 0.7;}
+    35% {opacity: 0.6;}
+    50% {opacity: 0.5;}
+    65% {opacity: 0.4;}
+    75% {opacity: 0.3;}
+    85% {opacity: 0.2;}
+    100% {opacity: 0.1;}
+}
+
+
+.menu{
+    display: flex;
+    align-items: flex-start;
+    top: 0;
+    position: sticky;
+    
+}
+
+.menu a:nth-child(1):hover{
+    display: flex;
+    animation-name: opacity;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+    
+}
+
+.menu a:nth-child(2):hover{
+    display: flex;
+    animation-name: opacity;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+    
+}
+
+.menu a:nth-child(3):hover{
+    display: flex;
+    animation-name: opacity;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+    
+}
+
+.menu a:nth-child(4):hover{
+    display: flex;
+    animation-name: opacity;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+    
+}
+
+
+
+.menu a:last-child{
+    display: flex;
+    margin-left:auto;
+    
+}
+
+a{
+    padding: 20px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.836);
+    font-weight:bold;
+    font-family: 'Anton', sans-serif;
+    text-shadow: 3px 3px 3px gray;
+    
+    
+   
+}
+
+a:hover{
+    background-color: rgb(99, 152, 187);
+    opacity: 0.8;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+
+
+.dicas{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: rgba(98, 173, 173, 0.233);
+    margin: 10px 10px 10px 10px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+
+.dicas > div{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: white;
+    border: 2px solid rgba(42, 66, 66, 0.493);
+    border-radius: 20px;
+    margin: 10px 10px 10px 10px;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    box-shadow: 5px 5px 5px 5px gray;
+    
+    
+}
+.dicas div > h1{
+    display: flex;
+    padding: 20px;
+    font-family: 'Anton', sans-serif;
+    
+}
+
+
+.dicas p {
+    display: flex;
+    padding: 20px;
+    color:rgb(164, 210, 221);
+    font-family: 'Lobster', cursive;
+}
+
+
+
+.lisboa{
+    grid-area: lisboa;
+    background-image: url("imgPortugal/lisboa.jpg");
+    padding: 20px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px gray;
+    font-family: 'Anton', sans-serif;
+}
+
+.algarve{
+    grid-area: algarve;
+    background-image: url("imgPortugal/algarve.jpg");
+    padding: 20px;
+    background-size: auto 200px, contain;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px gray; 
+    font-family: 'Anton', sans-serif;
+    
+}
+
+.porto{
+    grid-area: porto;
+    background-image: url("imgPortugal/porto.jpg");
+    padding: 20px;
+    background-size: auto 200px, contain;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px gray; 
+    font-family: 'Anton', sans-serif;
+}
+
+.braga{
+    grid-area: braga;
+    background-image: url("imgPortugal/Braga.jpeg");
+    padding: 20px;
+    background-size: auto 200px, contain;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px gray; 
+    font-family: 'Anton', sans-serif;
+}
+
+.guimaraes{
+    grid-area: guimaraes;
+    background-image: url("imgPortugal/guimaraes.jpg");
+    padding: 20px;
+    background-size: auto 200px, contain;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px gray; 
+    font-family: 'Anton', sans-serif;
+}
+
+
+.destinos{
+    display: grid;
+    background-color: rgba(98, 173, 173, 0.233);
+    border-radius: 20px;
+    padding: 20px;
+    font-family: 'Anton', sans-serif;
+}
+
+.fotos{
+    display: grid;
+    background-color: rgba(98, 173, 173, 0.233);
+    border-radius: 20px;
+    padding: 20px;
+    font-family: 'Anton', sans-serif;
+    align-items: start;
+
+    justify-content: center;
+    margin: 0 10vw;
+    grid-gap: 20px;
+    align-items: start;
+
+    justify-content: center;
+}
+
+@keyframes sombra {
+
+    0% {box-shadow: 2px 2px 2px 2px rgba(245, 245, 245, 0.854);}
+    15% {box-shadow: 2px 2px 2px 2px rgba(245, 245, 245, 0.635);}
+    25% {box-shadow: 2px 2px 2px 2px gray;}
+    50% {box-shadow: 2px 2px 2px 2px rgba(128, 128, 128, 0.215);}
+    75% {box-shadow: 2px 2px 2px 2px rgba(255, 255, 0, 0);}
+    100% {box-shadow: 2px 2px 2px 2px rgb(0, 0, 0);}
+}
+
+.fotos img{
+    max-width: 100%;
+    border-radius: 20px;
+    animation-name: sombra;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+    position: relative;
+}
+
+.fotos > div {
+    position: static;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    transition: opacity 1s, transform 1s;
+    
+}
+
+.fotos > div:hover {
+    visibility: visible;
+    width: 200px;
+    border-radius: 20px;
+    
+    transform: rotate(-20deg);
+    opacity: 0.6;
+    
+}
+
+
+.fotos p{
+    background-color: white;
+    
+    bottom: 20px;
+    left: 0px;
+    padding-left: 5px;
+    visibility: hidden;
+    transition: width 1s;
+    position: absolute;
+    justify-content:end;
+    align-items: center;
+    
+}
+
+.fotos > div:hover p{
+    visibility: visible;
+    width: 200px;
+    border-radius: 20px;
+}
+
+.foto > div{
+    padding: 5px;
+}
+
+.foto1{
+    grid-area: foto1;
+    
+   
+}
+.foto2{
+    grid-area: foto2;
+    
+    
+}
+.foto3{
+    grid-area: foto3;
+   
+   
+}
+.foto4{
+    grid-area: foto4;
+    
+}
+.foto5{
+    grid-area: foto5;
+    
+}
+.foto6{
+    grid-area: foto6;
+
+}
+.foto7{
+    grid-area: foto7;
+
+}
+.foto8{
+    grid-area: foto8;
+
+}
+.foto9{
+    grid-area: foto9;
+    
+  
+}
+.foto10{
+    grid-area: foto10;
+    
+ 
+}
+.foto11{
+    grid-area: foto11;
+    
+ 
+}
+.foto12{
+    grid-area: foto12;
+    
+ 
+}
+
+
+@media screen and (min-width: 901px) {
+    .destinos
+    {
+        grid-gap: 10px;
+       
+        grid-template-rows: 200px 200px ;
+        grid-template-columns: 200px 200px 200px 200px 200px;
+
+        grid-template-areas: 'algarve porto guimaraes viagem viagem'
+                                'lisboa lisboa braga viagem viagem';
+
+    }
+
+    .fotos
+    {
+        
+        grid-template-rows: 200px 200px 200px 200px;
+        grid-template-columns: 200px 200px 200px;
+
+        grid-template-areas: 
+        'foto1 foto2 foto3'
+        'foto4 foto5 foto6'
+        'foto7 foto8 foto9'  
+        'foto10 foto11 foto12';
+
+    }
+      
+}
+   
+
+@media screen and (max-width: 900px) {
+    .destinos
+    {
+        grid-gap: 5px;
+  
+        grid-template-rows: 200px 200px 200px 200px 200px;
+        grid-template-columns: 200px 200px;
+
+        grid-template-areas: 'porto algarve'
+                            'guimaraes braga'
+                            'lisboa lisboa'
+                            'viagem viagem'
+                            'viagem viagem';
+           
+    
+    } 
+
+
+    .fotos
+    {
+     
+
+        grid-template-rows: 200px 200px 200px 200px 200px 200px ;
+        grid-template-columns: 200px 200px;
+
+        grid-template-areas: 
+        'foto1 foto2' 
+        'foto3 foto4' 
+        'foto5 foto6' 
+        'foto7 foto8'
+        'foto9 foto10' 
+        'foto11 foto12';
+
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .fotos
+    {
+    
+       
+        grid-template-rows: 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px;
+        grid-template-columns: 200px;
+
+        grid-template-areas: 
+        'foto1'
+        'foto2'
+        'foto3'
+        'foto4'
+        'foto5'
+        'foto6'
+        'foto7'
+        'foto8'
+        'foto9'
+        'foto10'
+        'foto11'
+        'foto12';
+
+    }
+      
+}
+
+.tipoDestino{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    color: white;
+}
+
+.descricaoDestino{
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    color: white;  
+}
+
+
+.viagem{
+    grid-area: viagem;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 250px 150px;
+    grid-template-rows: 300px 100px;
+    grid-template-areas:
+    'viagem viagem' 
+    'txt button';
+}
+
+.image{
+    grid-area: viagem;
+    background-image: url("imgPortugal/viagem.jpg");
+    padding: 20px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px gray; 
+
+}
+
+.txt{
+    grid-area: txt;
+    align-self: center;
+    font-family: 'Lobster', cursive;
+    color:rgb(49, 93, 104);
+    padding: 20px;
+}
+
+.button{
+    grid-area: button;
+    color: aquamarine;
+    border: 2px solid rgba(42, 66, 66, 0.493);
+    font-family: 'Anton', sans-serif;
+    color:rgb(49, 93, 104);
+    background-color: rgb(243, 250, 250); 
+    font-size: 20px; 
+    mask-size: contain;
+    padding: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: rgb(201, 229, 248);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
